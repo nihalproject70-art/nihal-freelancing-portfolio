@@ -1,5 +1,5 @@
 /* ============================================================
-   script.js – Nihal Ahmed N Portfolio Interactions
+   script.js – NIHAL AHMED Portfolio Interactions
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function type() {
     if (charIndex < textArray[textArrayIndex].length) {
-      if(!typedTextSpan.classList.contains("typing")) typedTextSpan.classList.add("typing");
+      if (!typedTextSpan.classList.contains("typing")) typedTextSpan.classList.add("typing");
       typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
       charIndex++;
       setTimeout(type, typingDelay);
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function erase() {
     if (charIndex > 0) {
-      if(!typedTextSpan.classList.contains("typing")) typedTextSpan.classList.add("typing");
+      if (!typedTextSpan.classList.contains("typing")) typedTextSpan.classList.add("typing");
       typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
       charIndex--;
       setTimeout(erase, erasingDelay);
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       // Simulate form submission
       const originalBtnText = submitBtn.innerHTML;
       submitBtn.innerHTML = 'Sending...';
@@ -138,14 +138,14 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         // Adjust for fixed navbar
         const headerOffset = 70;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
+
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth"
