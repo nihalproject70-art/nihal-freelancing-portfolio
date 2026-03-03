@@ -1,5 +1,5 @@
 /* ============================================================
-   script.js – Niyal Ahmed N Portfolio Interactions
+   script.js – Nihal Ahmed N Portfolio Interactions
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
